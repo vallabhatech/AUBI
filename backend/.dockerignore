@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.git/
+.gitignore
+*.md
+.firecrawl/

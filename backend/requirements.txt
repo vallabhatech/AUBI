@@ -1,0 +1,24 @@
+# Core LangGraph + LLMs
+langgraph>=1.0.0
+langchain-core>=0.3.0
+langchain-openai>=0.3.0
+
+# API
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+httpx>=0.27.0
+pydantic>=2.9.0
+pydantic-settings>=2.6.0
+
+# GitHub ingestion
+PyGitHub>=2.3.0
+
+# Qdrant (used by knowledge service)
+qdrant-client>=1.16.0
+
+# Embeddings (free, local)
+sentence-transformers>=3.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+python-json-logger>=2.0.7

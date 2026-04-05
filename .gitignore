@@ -1,0 +1,50 @@
+# ── Secrets — NEVER commit ───────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials.json
+service_account*.json
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+htmlcov/
+.coverage
+
+# ── Node ──────────────────────────────────────────────────────────────────────
+node_modules/
+.next/
+.turbo/
+out/
+*.tsbuildinfo
+
+# ── OS / editors ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+.firecrawl/
+tmp/
+*.log

@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #080808;
+  --color-text: #e8e4dc;
+  --color-accent: #39ff14;
+  --color-divider: #1f1f1f;
+  --font-display: "Bebas Neue";
+  --font-mono: "IBM Plex Mono";
+  --font-body: "IBM Plex Sans";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--color-bg);
+  font-family: var(--font-body), "IBM Plex Sans", sans-serif;
+}
+
+button,
+textarea,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.font-syne {
+  font-family: var(--font-display), "Bebas Neue", sans-serif;
+  letter-spacing: 4px;
+}
+
+.font-mono {
+  font-family: var(--font-mono), "IBM Plex Mono", monospace;
+}
+
+@keyframes system-online-fade {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.system-online-fade {
+  animation: system-online-fade 3.6s ease-in-out infinite;
+}
+
+.terminal-container::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 29px 0 29px;
+  background: transparent;
+  z-index: 1;
+}
+
+.aubi-scrollbar {
+  scrollbar-color: #e8e4dc #080808;
+  scrollbar-width: thin;
+}
+
+.aubi-scrollbar::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.aubi-scrollbar::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+.aubi-scrollbar::-webkit-scrollbar-thumb {
+  background: #e8e4dc;
+}
