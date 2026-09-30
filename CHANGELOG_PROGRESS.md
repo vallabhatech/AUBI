@@ -7,4 +7,10 @@ This file tracks repository changes made during the production-hardening pass. E
 ### Step 1 — Change tracking initialized
 - Added this file to record the hardening work step by step.
 - No application behavior changed in this step.
-- Next: improve document metadata and navigation accessibility.
+
+### Step 2 — Improve document metadata and navigation accessibility
+- Added richer page metadata, keywords, robots configuration, and dark viewport metadata.
+- Added a keyboard-accessible skip link to the main content.
+- Added an explicit primary-navigation label and aria-current state for active routes.
+- Moved navigation definitions into a reusable constant to keep the component easier to maintain.
+- Next: harden the frontend-to-backend proxy behavior.
