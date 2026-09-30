@@ -26,4 +26,9 @@ This file tracks repository changes made during the production-hardening pass. E
 - Disabled the default Next.js powered-by response header.
 - Added MIME-sniffing protection, clickjacking protection, strict referrer policy, and a restrictive browser permissions policy.
 - Added HSTS for HTTPS deployments.
-- Next: verify the resulting repository state and check the current deployment wiring without touching unrelated Vercel projects.
+
+### Step 5 — Correct and verify proxy source formatting
+- Corrected the proxy files to use real source newlines after the automated write step.
+- Re-read the committed source files through GitHub to confirm the intended TypeScript structure is present.
+- Local build execution was attempted, but the execution environment could not resolve github.com, so dependency installation/build verification was unavailable.
+- Vercel projects currently visible to the connected account are unrelated projects named client/server and point at the Knowly repository; no deployment was triggered for them to avoid touching the wrong application.
